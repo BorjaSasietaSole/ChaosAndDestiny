@@ -1,0 +1,36 @@
+{
+	"texts": [
+		{
+			"key": "play",
+			"value": "Jugar"
+		},
+		{
+			"key": "settings",
+			"value": "Opcions"
+		},
+		{
+			"key": "exit",
+			"value": "Eixir"
+		},
+		{
+			"key": "sound",
+			"value": "So"
+		},
+		{
+			"key": "cat",
+			"value": "Català"
+		},
+		{
+			"key": "esp",
+			"value": "Espanyol"
+		},
+		{
+			"key": "eng",
+			"value": "Anglès"
+		},
+		{
+			"key": "return",
+			"value": "Tornar"
+		}
+	]
+}

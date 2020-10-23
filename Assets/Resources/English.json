@@ -1,0 +1,36 @@
+{
+	"texts": [
+		{
+			"key": "play",
+			"value": "Play"
+		},
+		{
+			"key": "settings",
+			"value": "Options"
+		},
+		{
+			"key": "exit",
+			"value": "Exit"
+		},
+		{
+			"key": "sound",
+			"value": "Sound"
+		},
+		{
+			"key": "cat",
+			"value": "Catalan"
+		},
+		{
+			"key": "esp",
+			"value": "Spanish"
+		},
+		{
+			"key": "eng",
+			"value": "English"
+		},
+		{
+			"key": "return",
+			"value": "Go Back"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"texts": [
+		{
+			"key": "play",
+			"value": "Jugar"
+		},
+		{
+			"key": "settings",
+			"value": "Opciones"
+		},
+		{
+			"key": "exit",
+			"value": "Salir"
+		},
+		{
+			"key": "sound",
+			"value": "Sonido"
+		},
+		{
+			"key": "cat",
+			"value": "Catalán"
+		},
+		{
+			"key": "esp",
+			"value": "Español"
+		},
+		{
+			"key": "eng",
+			"value": "Inglés"
+		},
+		{
+			"key": "return",
+			"value": "Volver"
+		}
+	]
+}
