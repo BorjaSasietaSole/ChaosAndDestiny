@@ -71,8 +71,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597eae763c3ea27418259ec676d36800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaToLoad: Xamadu
+  areaToLoad: 
   areaTrasitionName: 
+  entrance: {fileID: 4197976069778047142}
 --- !u!1 &4197976069778047141
 GameObject:
   m_ObjectHideFlags: 0
