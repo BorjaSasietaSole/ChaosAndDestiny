@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Principal.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Xamadu.unity
-    guid: c56d8b35c5083284eae3c134a57f6a35
-  - enabled: 1
     path: Assets/Scenes/Casa Essehl.unity
     guid: 5a24779a855f5894caf72b9c77919e86
+  - enabled: 1
+    path: Assets/Scenes/Xamadu.unity
+    guid: c56d8b35c5083284eae3c134a57f6a35
   m_configObjects: {}

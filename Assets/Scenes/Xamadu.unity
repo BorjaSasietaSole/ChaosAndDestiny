@@ -53740,6 +53740,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 25787203, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 25787204, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -655.4
@@ -53774,11 +53778,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 749796049, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 65
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 749796049, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.8
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1217374003, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
       propertyPath: m_IsActive
@@ -53790,15 +53794,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1217374004, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -63
+      value: 0.0056152344
       objectReference: {fileID: 0}
     - target: {fileID: 1217374004, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -126.02222
+      value: -0.010986328
       objectReference: {fileID: 0}
     - target: {fileID: 1217374004, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217374004, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -412.16998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217374004, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -824.3333
       objectReference: {fileID: 0}
     - target: {fileID: 1217374005, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
       propertyPath: m_Color.r

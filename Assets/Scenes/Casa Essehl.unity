@@ -12349,8 +12349,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 25787203, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 25787205, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
       propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 749796048, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1217374003, guid: 1536e16a43aa9e642ab994e14b3403f9, type: 3}
@@ -12531,7 +12539,8 @@ MonoBehaviour:
   nameText: {fileID: 112557872162290527}
   dialogBox: {fileID: 112557872162290526}
   nameBox: {fileID: 112557872162290525}
-  dialogLines: []
+  dialogLines:
+  - 
   currentLine: 0
 --- !u!1001 &3595020894311802280
 PrefabInstance:
