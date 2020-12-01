@@ -29,6 +29,7 @@ public class ChangeArea : MonoBehaviour
             {
                 shouldLoadAfterFade = false;
                 SceneManager.LoadScene(areaToLoad);
+                GameManager.instance.faddingBetweenAreas = true;
             }
         }
     }

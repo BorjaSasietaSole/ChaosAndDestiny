@@ -38,7 +38,7 @@ public class DialogController : MonoBehaviour
                     {
                         dialogBox.SetActive(false);
                         nameBox.SetActive(false);
-                        PlayerController.instance.canMove = true;
+                        GameManager.instance.dialogActive = false;
                     }
                     else
                     {
@@ -63,7 +63,7 @@ public class DialogController : MonoBehaviour
         dialogBox.SetActive(true);
         nameBox.SetActive(true);
         justStarted = true;
-        PlayerController.instance.canMove = false;
+        GameManager.instance.dialogActive = true;
     }
 
     public void CheckIfName()
