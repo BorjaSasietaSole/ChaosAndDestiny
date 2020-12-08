@@ -20,7 +20,7 @@ public class CharStats : MonoBehaviour
     public int weaponPower;
     public int armorPower;
     public string equippedWeapon;
-    public string ewuippedArmor;
+    public string equippedArmor;
     public Sprite charImage;
 
     // Start is called before the first frame update
@@ -37,10 +37,7 @@ public class CharStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            AddExp(500);
-        }
+        
     }
 
     public void AddExp(int expToAdd)
