@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

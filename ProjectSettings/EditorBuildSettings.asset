@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Botiga.unity
     guid: f64fba9a5bad51847aa0d3e0b02599d5
+  - enabled: 1
+    path: Assets/Scenes/Ferreria.unity
+    guid: 8a0ccc2c029358f4d803c97d5f6d6a9c
   m_configObjects: {}

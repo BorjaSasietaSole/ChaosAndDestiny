@@ -93,7 +93,7 @@ public class Shop : MonoBehaviour
         for (int i = 0; i < GameManager.instance.itemsHeld.Length; i++)
         {
             sellItemButtons[i].buttonValue = i;
-            if (itemsForSale[i] != "")
+            if (GameManager.instance.itemsHeld[i] != "")
             {
                 sellItemButtons[i].buttonImage.gameObject.SetActive(true);
                 sellItemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite;
@@ -118,9 +118,9 @@ public class Shop : MonoBehaviour
     public void SelectSellItem(Item sellItem)
     {
         selectedItem = sellItem;
-        buyItemName.text = selectedItem.itemName;
-        buyItemDescription.text = selectedItem.desscription;
-        buyItemValue.text = "Value:" + Mathf.FloorToInt(selectedItem.value * .5f).ToString() + "$";
+        sellItemName.text = selectedItem.itemName;
+        sellItemDescription.text = selectedItem.desscription;
+        sellItemValue.text = "Value:" + Mathf.FloorToInt(selectedItem.value * .5f).ToString() + "$";
     }
 
     public void BuyItem()

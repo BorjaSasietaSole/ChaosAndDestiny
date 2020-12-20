@@ -104,7 +104,7 @@ MonoBehaviour:
   itemSprite: {fileID: -9072218389988307487, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
     type: 3}
   amountToChange: 0
-  afecctHP: 0
+  affectHP: 0
   affectMP: 0
   affectStrength: 0
   affectDefense: 0
