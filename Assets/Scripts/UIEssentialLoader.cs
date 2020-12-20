@@ -7,6 +7,7 @@ public class UIEssentialLoader : MonoBehaviour
     public GameObject UIScreen;
     public GameObject player;
     public GameObject gameMan;
+    public GameObject auduioMan;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,10 @@ public class UIEssentialLoader : MonoBehaviour
         if(GameManager.instance == null)
         {
             Instantiate(gameMan);
+        }
+        if(AudioManager.instance == null)
+        {
+            Instantiate(auduioMan);
         }
     }
 

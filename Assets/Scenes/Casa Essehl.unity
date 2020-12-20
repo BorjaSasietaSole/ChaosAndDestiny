@@ -2833,36 +2833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 79426350}
---- !u!1 &122736745
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 122736746}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &122736746
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122736745}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279107588
 GameObject:
   m_ObjectHideFlags: 0
@@ -6599,6 +6569,11 @@ PrefabInstance:
       propertyPath: map
       value: 
       objectReference: {fileID: 1665704273}
+    - target: {fileID: 7566293579848794599, guid: 546f99d78f9fe7c45bc16899d26760a7,
+        type: 3}
+      propertyPath: musicToPlay
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 546f99d78f9fe7c45bc16899d26760a7, type: 3}
 --- !u!1 &1665704270
@@ -12386,12 +12361,6 @@ PrefabInstance:
       propertyPath: UIScreen
       value: 
       objectReference: {fileID: 1828964788}
-    - target: {fileID: 180833206171693285, guid: 910396b60cf0c624bae34736e5bef3d3,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 4169551987157092836, guid: f127b8cbdc670514fb586a03db331e2e,
-        type: 3}
     - target: {fileID: 180833206171693285, guid: 910396b60cf0c624bae34736e5bef3d3,
         type: 3}
       propertyPath: gameMan
