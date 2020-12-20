@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2382136674496165684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.83, y: -3.92, z: 0}
-  m_LocalScale: {x: 1, y: 0.475, z: 1}
+  m_LocalScale: {x: 1.1707, y: 0.62925124, z: 1.1707}
   m_Children:
   - {fileID: 4197976069778047143}
   m_Father: {fileID: 0}
@@ -71,9 +71,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597eae763c3ea27418259ec676d36800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaToLoad: 
-  areaTrasitionName: 
+  areaToLoad: Casa Essehl
+  areaTrasitionName: Xamadu1
   entrance: {fileID: 4197976069778047142}
+  waitToLoad: 1
 --- !u!1 &4197976069778047141
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,8 +100,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4197976069778047141}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.12999988, y: 0.3000002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.28, y: -2.34, z: 0}
+  m_LocalScale: {x: 1.1924, y: 1.1924, z: 1.1924}
   m_Children: []
   m_Father: {fileID: 1383363298801434826}
   m_RootOrder: 0
@@ -117,4 +118,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338f4b17c78d2d84bbe200972e0a2607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AreaTransitionName: Xamadu
+  AreaTransitionName: 

@@ -58,7 +58,7 @@ MonoBehaviour:
   weaponPower: 0
   armorPower: 0
   equippedWeapon: 
-  ewuippedArmor: 
+  equippedArmor: 
   charImage: {fileID: -5121836052191208003, guid: 119495a767e98334c8e27e1b6f4578c2,
     type: 3}
 --- !u!1 &5441610105474811798
@@ -70,6 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 741118742881955612}
+  - component: {fileID: 141336616176529338}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -92,3 +93,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &141336616176529338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5441610105474811798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecf22b7238427f44a6c72ad04588481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats:
+  - {fileID: 141336616738996749}
+  gameMenuOpen: 0
+  dialogActive: 0
+  faddingBetweenAreas: 0
+  shopActive: 0
+  itemsHeld:
+  - 
+  - 
+  - 
+  - 
+  - Mana Potion
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Health Potion
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  numberOfItems: 000000000000000000000000000000002100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  referenceItems:
+  - {fileID: 4734366742066753591, guid: 5ab8b7689b119fc4f8b81bc451978fa4, type: 3}
+  - {fileID: 5262173991537155536, guid: 5491fef7ad9c818428d29420cea0b98d, type: 3}
+  - {fileID: 8806233885440638666, guid: d569af9ec4a6bf04b962a793fec5bd60, type: 3}
+  - {fileID: 3701038127360180629, guid: 2ce9d39f2172cae46a83fea4ea431cce, type: 3}
+  - {fileID: 7339921289249623722, guid: c90ad49e85e3e83439b283ecad6772aa, type: 3}
+  - {fileID: 7676294379436304243, guid: b4c1c20da25ed8147bad77b0a88c4deb, type: 3}
+  - {fileID: 2305457303367283490, guid: fb558f3e947129949a7506fdebc5dd49, type: 3}
+  currentGold: 1000

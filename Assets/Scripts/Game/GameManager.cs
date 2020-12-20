@@ -8,11 +8,13 @@ public class GameManager : MonoBehaviour
 
     public CharStats[] playerStats;
 
-    public bool gameMenuOpen, dialogActive, faddingBetweenAreas;
+    public bool gameMenuOpen, dialogActive, faddingBetweenAreas, shopActive;
 
     public string[] itemsHeld;
     public int[] numberOfItems;
     public Item[] referenceItems;
+
+    public int currentGold;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameMenuOpen || dialogActive || faddingBetweenAreas)
+        if(gameMenuOpen || dialogActive || faddingBetweenAreas || shopActive)
         {
             PlayerController.instance.canMove = false;
         }
