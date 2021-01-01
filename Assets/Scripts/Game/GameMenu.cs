@@ -197,8 +197,11 @@ public class GameMenu : MonoBehaviour
         itemCharChoiceMenu.SetActive(true);
         for(int i = 0; i < itemCharChoiceName.Length; i++)
         {
-            itemCharChoiceName[i].text = GameManager.instance.playerStats[i].charName;
-            itemCharChoiceName[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
+            if(GameManager.instance.playerStats[i] != null)
+            {
+                itemCharChoiceName[i].text = GameManager.instance.playerStats[i].charName;
+                itemCharChoiceName[i].transform.parent.gameObject.SetActive(true);
+            }
         }
     }
 
