@@ -64,12 +64,12 @@ public class GameMenu : MonoBehaviour
 
         for(int i = 0; i < playerStats.Length; i++)
         {
-            if (playerStats[i].gameObject.activeInHierarchy)
+            if(playerStats[i] != null)
             {
                 charStatHolder[i].SetActive(true);
                 UpdateCharacterStats(i);
             }
-            else
+            else if(charStatHolder[i] != null)
             {
                 charStatHolder[i].SetActive(false);
             }
@@ -221,5 +221,22 @@ public class GameMenu : MonoBehaviour
     public void PlayButtonSound()
     {
         AudioManager.instance.PlaySFX(4);
+    }
+    public void pushCharToArr(GameObject charac)
+    {
+        int pos = 0;
+        bool find = false;
+        while (!find)
+        {
+            if (charStatHolder[pos] == null)
+            {
+                find = true;
+            }
+            else
+            {
+                pos++;
+            }
+        }
+        charStatHolder[pos] = charac;
     }
 }

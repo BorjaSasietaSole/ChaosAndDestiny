@@ -73,3 +73,6 @@ MonoBehaviour:
   lines:
   - n-Essehl
   - Aquesta es la casa de L'Essehl
+  shouldActivateQuest: 0
+  markComplete: 0
+  questToMark: 

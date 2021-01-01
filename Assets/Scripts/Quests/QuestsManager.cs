@@ -25,7 +25,7 @@ public class QuestsManager : MonoBehaviour
 
     public int GetQuestNumber(string questToFind)
     {
-        int ret = 0;
+        int ret = -1;
         for(int i = 0; i < questMarkerNames.Length; i++)
         {
             if(questMarkerNames[i] == questToFind)
@@ -33,7 +33,7 @@ public class QuestsManager : MonoBehaviour
                 ret = i;
             }
         }
-        if(ret == 0)
+        if(ret == -1)
         {
             Debug.LogError("Quest " + questToFind + "does not exist");
         }

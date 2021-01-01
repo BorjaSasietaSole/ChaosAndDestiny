@@ -212,4 +212,22 @@ public class GameManager : MonoBehaviour
             numberOfItems[j] = PlayerPrefs.GetInt("ItemAmount_" + j);
         }
     }
+
+    public void pushCharToArr(CharStats charac)
+    {
+        int pos = 0;
+        bool find = false;
+        while(!find)
+        {
+            if(playerStats[pos] == null)
+            {
+                find = true;
+            }
+            else
+            {
+                pos++;
+            }
+        }
+        playerStats[pos] = charac;
+    }
 }

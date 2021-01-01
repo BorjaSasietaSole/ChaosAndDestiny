@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7157499808009515078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7157499808009515076}
+  - component: {fileID: 7157499808009515077}
+  m_Layer: 0
+  m_Name: PlayerStatZoriach
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7157499808009515076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7157499808009515078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -22.761303, y: -41.751656, z: 130.94376}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7157499808009515077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7157499808009515078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13f746235665264cac635b61efe623a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Zoriach
+  playerLevel: 2
+  currentExp: 560
+  expToNextLevel: 10270000e02e0000983a0000204e000090650000007d0000409c000050c3000070110100a0860100
+  maxLevel: 10
+  baseExp: 1000
+  currentHP: 1000
+  maxHP: 1000
+  currentMP: 300
+  maxMP: 300
+  strength: 22
+  defense: 14
+  weaponPower: 0
+  armorPower: 0
+  equippedWeapon: 
+  equippedArmor: 
+  charImage: {fileID: -5453881429103183072, guid: a5a81fde2878d76429fbc97a98b6254f,
+    type: 3}

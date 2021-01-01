@@ -10,20 +10,13 @@ public class UIFade : MonoBehaviour
     public Image fadeScreen;
     public float fadeSpeed;
 
-    private bool shouldFadeToBlack;
-    private bool shouldFadeFromBlack;
+    public bool shouldFadeToBlack;
+    public bool shouldFadeFromBlack;
 
     // Start is called before the first frame update
     void Start()
     {
-        if(instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
