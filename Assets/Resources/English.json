@@ -1,6 +1,10 @@
 {
 	"texts": [
 		{
+			"key": "continue",
+			"value": "Continue"
+		},
+		{
 			"key": "play",
 			"value": "Play"
 		},

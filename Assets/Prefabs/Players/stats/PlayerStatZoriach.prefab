@@ -55,9 +55,9 @@ MonoBehaviour:
   maxMP: 300
   strength: 22
   defense: 14
-  weaponPower: 15
+  weaponPower: 0
   armorPower: 0
-  equippedWeapon: Iron axe
+  equippedWeapon: 
   equippedArmor: 
   charImage: {fileID: -5453881429103183072, guid: a5a81fde2878d76429fbc97a98b6254f,
     type: 3}

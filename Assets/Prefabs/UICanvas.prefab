@@ -28872,8 +28872,8 @@ MonoBehaviour:
   - {fileID: 807895762929327007}
   charStatHolder:
   - {fileID: 743140203544173722, guid: c1a2afbc42b423c49a5cfe547a122224, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7157499808009515078, guid: 71676472ee7c978409362146d329f782, type: 3}
+  - {fileID: 5323156117762658455, guid: d848fdc46ca965f42997d85ac5bf9fe9, type: 3}
   statusButtons: []
   statusName: {fileID: 3371383726356537004}
   statusHP: {fileID: 8753255520371652339}
@@ -45894,6 +45894,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
+      - m_Target: {fileID: 2264496113616914211}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5212819912248481889
 GameObject:
   m_ObjectHideFlags: 0

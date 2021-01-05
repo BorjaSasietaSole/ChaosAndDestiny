@@ -1,6 +1,10 @@
 {
 	"texts": [
 		{
+			"key": "continue",
+			"value": "Continuar"
+		},
+		{
 			"key": "play",
 			"value": "Jugar"
 		},
@@ -10,7 +14,7 @@
 		},
 		{
 			"key": "exit",
-			"value": "Eixir"
+			"value": "Sortir"
 		},
 		{
 			"key": "sound",

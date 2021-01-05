@@ -34,15 +34,18 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
-
-        //keep the camera inside the bounds
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLimit.x, topLimit.x), Mathf.Clamp(transform.position.y, bottomLimit.y, topLimit.y), transform.position.z);
-
-        if (!musicStarted)
+        if (transform != null && target != null)
         {
-            musicStarted = true;
-            AudioManager.instance.PlayBGM(musicToPlay);
+            transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+
+            //keep the camera inside the bounds
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLimit.x, topLimit.x), Mathf.Clamp(transform.position.y, bottomLimit.y, topLimit.y), transform.position.z);
+
+            if (!musicStarted)
+            {
+                musicStarted = true;
+                AudioManager.instance.PlayBGM(musicToPlay);
+            }
         }
     }
 }

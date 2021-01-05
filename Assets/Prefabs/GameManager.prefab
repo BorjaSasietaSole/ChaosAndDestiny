@@ -47,8 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats:
   - {fileID: 81308468543319634}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7157499808009515077, guid: 71676472ee7c978409362146d329f782, type: 3}
+  - {fileID: 5323156117762658452, guid: d848fdc46ca965f42997d85ac5bf9fe9, type: 3}
   gameMenuOpen: 0
   dialogActive: 0
   faddingBetweenAreas: 0

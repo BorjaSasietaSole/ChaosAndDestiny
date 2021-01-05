@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Principal.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Carregar.unity
+    guid: fc70d29bf258d27478625d80a4681a57
+  - enabled: 1
     path: Assets/Scenes/Casa Essehl.unity
     guid: 5a24779a855f5894caf72b9c77919e86
   - enabled: 1

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameMenu : MonoBehaviour
 {
@@ -64,14 +65,10 @@ public class GameMenu : MonoBehaviour
 
         for(int i = 0; i < playerStats.Length; i++)
         {
-            if(playerStats[i] != null)
+            if(playerStats[i] != null && playerStats[i].gameObject.activeSelf)
             {
                 charStatHolder[i].SetActive(true);
                 UpdateCharacterStats(i);
-            }
-            else if(charStatHolder[i] != null)
-            {
-                charStatHolder[i].SetActive(false);
             }
         }
         GoldText.text = GameManager.instance.currentGold.ToString() + "$";
@@ -231,15 +228,24 @@ public class GameMenu : MonoBehaviour
         bool find = false;
         while (!find)
         {
-            if (charStatHolder[pos] == null)
+            if (charStatHolder[pos] == charac)
             {
                 find = true;
+                charStatHolder[pos].SetActive(true);
             }
             else
             {
                 pos++;
             }
         }
-        charStatHolder[pos] = charac;
+    }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadScene("Menu Principal");
+        Destroy(GameManager.instance.gameObject);
+        Destroy(PlayerController.instance.gameObject);
+        Destroy(AudioManager.instance.gameObject);
+        Destroy(gameObject);
     }
 }
