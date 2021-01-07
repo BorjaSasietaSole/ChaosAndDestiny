@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5323156117762658453
 Transform:
   m_ObjectHideFlags: 0
@@ -45,13 +45,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charName: Buffina
   playerLevel: 1
-  currentExp: 330
+  currentExp: 3730
   expToNextLevel: 10270000e02e0000983a0000204e000090650000007d0000409c000050c3000070110100a0860100
   maxLevel: 10
   baseExp: 1000
-  currentHP: 1000
+  currentHP: 898
   maxHP: 1000
-  currentMP: 300
+  currentMP: 265
   maxMP: 300
   strength: 8
   defense: 26

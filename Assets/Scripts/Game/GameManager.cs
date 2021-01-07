@@ -227,7 +227,7 @@ public class GameManager : MonoBehaviour
         bool find = false;
         while(!find)
         {
-            if(playerStats[pos] == charac)
+            if(playerStats[pos].name == charac.name)
             {
                 playerStats[pos].gameObject.SetActive(true);
                 find = true;

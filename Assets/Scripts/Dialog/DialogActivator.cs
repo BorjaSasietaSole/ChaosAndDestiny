@@ -12,6 +12,8 @@ public class DialogActivator : MonoBehaviour
     public bool markComplete;
     public string questToMark;
 
+    public GameObject toShow;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,10 @@ public class DialogActivator : MonoBehaviour
         {
             DialogController.instance.ShowDialog(lines);
             DialogController.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+            if (toShow != null) 
+            { 
+                toShow.SetActive(true); 
+            }
         }
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ReclutChar : MonoBehaviour
 {
+    public string questToCompleteOn;
 
     public CharStats characterToReclut;
     public bool isActive;
@@ -24,7 +25,14 @@ public class ReclutChar : MonoBehaviour
             GameMenu.instance.pushCharToArr(characterToReclut.gameObject);
             GameMenu.instance.UpdateMainStats();
             isActive = false;
-            Destroy(gameObject);
+            QuestsManager.instance.MarkQuestComplete(questToCompleteOn);
+        }
+        if (!isActive)
+        {
+            if (QuestsManager.instance.CheckIfComplete(questToCompleteOn))
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D other)

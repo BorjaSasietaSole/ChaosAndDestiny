@@ -45,13 +45,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charName: Zoriach
   playerLevel: 2
-  currentExp: 560
+  currentExp: 3960
   expToNextLevel: 10270000e02e0000983a0000204e000090650000007d0000409c000050c3000070110100a0860100
   maxLevel: 10
   baseExp: 1000
-  currentHP: 1000
+  currentHP: 832
   maxHP: 1000
-  currentMP: 300
+  currentMP: 285
   maxMP: 300
   strength: 22
   defense: 14

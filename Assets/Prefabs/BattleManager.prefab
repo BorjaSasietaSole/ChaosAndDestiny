@@ -2190,7 +2190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100/1000
+  m_Text: 
 --- !u!1 &2064409657064670131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,7 +2362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2064409657184065698
 Transform:
   m_ObjectHideFlags: 0
@@ -2867,7 +2867,7 @@ MonoBehaviour:
   rewardXP: 500
   rewardItems:
   - Health Potion
-  setCannotFlee: 0
+  cannotFlee: 0
 --- !u!1 &2064409657348105689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,7 +3241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2064409657524282033
 Transform:
   m_ObjectHideFlags: 0
@@ -3333,7 +3333,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 80/200
+  m_Text: 
 --- !u!1 &2064409657548642497
 GameObject:
   m_ObjectHideFlags: 0
@@ -4647,7 +4647,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100/1000
+  m_Text: 
 --- !u!1 &2064409657886642777
 GameObject:
   m_ObjectHideFlags: 0
@@ -5425,7 +5425,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 80/200
+  m_Text: 
 --- !u!1 &2064409658163763340
 GameObject:
   m_ObjectHideFlags: 0
@@ -5685,7 +5685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 80/200
+  m_Text: 
 --- !u!1 &2064409658216004543
 GameObject:
   m_ObjectHideFlags: 0
@@ -5763,7 +5763,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100/1000
+  m_Text: 
 --- !u!1 &2713226712411955279
 GameObject:
   m_ObjectHideFlags: 0
