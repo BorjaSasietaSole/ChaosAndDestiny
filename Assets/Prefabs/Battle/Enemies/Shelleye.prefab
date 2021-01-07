@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4470355635942260836
+--- !u!1 &4343041832645724454
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4470355635942260837}
-  - component: {fileID: 4470355635942260834}
-  - component: {fileID: 6680232101419916893}
+  - component: {fileID: 8490388656747288320}
+  - component: {fileID: 4797663022648972244}
+  - component: {fileID: -6760979068872743948}
   m_Layer: 0
-  m_Name: TortulePotion
+  m_Name: Shelleye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4470355635942260837
+--- !u!4 &8490388656747288320
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4470355635942260836}
+  m_GameObject: {fileID: 4343041832645724454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4470355635942260834
+--- !u!212 &4797663022648972244
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4470355635942260836}
+  m_GameObject: {fileID: 4343041832645724454}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -71,24 +71,24 @@ SpriteRenderer:
   m_SortingLayerID: 471261943
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300016, guid: 988d560df8d322a468c97243cbfd76e8, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 988d560df8d322a468c97243cbfd76e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.5625, y: 1.375}
+  m_Size: {x: 1.1875, y: 1.6875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6680232101419916893
+--- !u!114 &-6760979068872743948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4470355635942260836}
+  m_GameObject: {fileID: 4343041832645724454}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 031eb65014a2b02498b6a044e016c5c1, type: 3}
@@ -96,16 +96,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   movesAviable:
-  - Plasma
-  - Slash
   - Ice
-  charName: TortulePotion
-  currentHP: 210
-  maxHP: 210
-  currentMP: 10
-  maxMP: 10
-  strength: 12
-  defence: 5
+  - Fire
+  charName: Shelleye
+  currentHP: 150
+  maxHP: 150
+  currentMP: 80
+  maxMP: 80
+  strength: 10
+  defence: 10
   wpnPower: 0
   armrPower: 0
   hasDie: 0
+  theSprite: {fileID: 4797663022648972244}
+  deadSprite: {fileID: 0}
+  aliveSprite: {fileID: 0}
+  shouldFade: 0
+  fadeSpeed: 1

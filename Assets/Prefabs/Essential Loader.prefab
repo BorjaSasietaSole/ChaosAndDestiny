@@ -49,3 +49,5 @@ MonoBehaviour:
   gameMan: {fileID: 5441610105474811798, guid: e9e678b600f94f24591ac23930c95892, type: 3}
   auduioMan: {fileID: 7908973740400047739, guid: 93ae14b15bd98ce47a1156fe6251605b,
     type: 3}
+  battleManager: {fileID: 2064409657315044288, guid: 0e2b619b16410694a9d4a5ecdea18da0,
+    type: 3}

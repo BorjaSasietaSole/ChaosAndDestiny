@@ -53,6 +53,7 @@ MonoBehaviour:
   dialogActive: 0
   faddingBetweenAreas: 0
   shopActive: 0
+  battleActive: 0
   itemsHeld:
   - 
   - 
@@ -132,7 +133,7 @@ MonoBehaviour:
   - agafar destral
   - comprar consumible
   - comprar equipament
-  - derrotar cap prova
+  - Derrotar al drac
   questMarkesComplete: 
 --- !u!1001 &824430916675744459
 PrefabInstance:
