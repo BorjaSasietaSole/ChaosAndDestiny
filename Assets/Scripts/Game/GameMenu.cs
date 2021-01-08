@@ -67,8 +67,12 @@ public class GameMenu : MonoBehaviour
         {
             if(playerStats[i] != null && playerStats[i].gameObject.activeSelf)
             {
-                charStatHolder[i].SetActive(true);
+                charStatHolder[i].gameObject.SetActive(true);
                 UpdateCharacterStats(i);
+            }
+            else
+            {
+                charStatHolder[i].gameObject.SetActive(false);
             }
         }
         GoldText.text = GameManager.instance.currentGold.ToString() + "$";
@@ -126,8 +130,15 @@ public class GameMenu : MonoBehaviour
         StatusCharacter(0);
         for(int i = 0; i < statusButtons.Length; i++)
         {
-            statusButtons[i].SetActive(playerStats[i].gameObject.activeSelf);
-            statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].charName;
+            if (playerStats[i].gameObject.activeSelf)
+            {
+                statusButtons[i].SetActive(true);
+                statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].charName;
+            }
+            else
+            {
+                statusButtons[i].SetActive(false);
+            }
         }
     }
 
@@ -221,23 +232,6 @@ public class GameMenu : MonoBehaviour
     public void PlayButtonSound()
     {
         AudioManager.instance.PlaySFX(4);
-    }
-    public void pushCharToArr(GameObject charac)
-    {
-        int pos = 0;
-        bool find = false;
-        while (!find)
-        {
-            if (charStatHolder[pos] == charac)
-            {
-                find = true;
-                charStatHolder[pos].SetActive(true);
-            }
-            else
-            {
-                pos++;
-            }
-        }
     }
 
     public void QuitGame()

@@ -10,10 +10,21 @@ public class ReclutChar : MonoBehaviour
     public bool isActive;
     public bool isInteractuate;
 
+    private static bool isHidden = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (GameManager.instance != null)
+        {
+            for (int i = 0; i < GameManager.instance.playerStats.Length; i++)
+            {
+                if (GameManager.instance.playerStats[i].charName == characterToReclut.charName && GameManager.instance.playerStats[i].gameObject.activeSelf)
+                {
+                    gameObject.SetActive(false);
+                }
+            }
+        }
     }
 
     // Update is called once per frame
@@ -22,7 +33,6 @@ public class ReclutChar : MonoBehaviour
         if (isActive && isInteractuate && Input.GetButtonDown("Fire1"))
         {
             GameManager.instance.pushCharToArr(characterToReclut);
-            GameMenu.instance.pushCharToArr(characterToReclut.gameObject);
             GameMenu.instance.UpdateMainStats();
             isActive = false;
             QuestsManager.instance.MarkQuestComplete(questToCompleteOn);
@@ -31,7 +41,8 @@ public class ReclutChar : MonoBehaviour
         {
             if (QuestsManager.instance.CheckIfComplete(questToCompleteOn))
             {
-                gameObject.SetActive(false);
+                isHidden = false;
+                gameObject.SetActive(isHidden);
             }
         }
     }

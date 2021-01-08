@@ -83,7 +83,6 @@ public class Item : MonoBehaviour
             selectorChar.equippedArmor = itemName;
             selectorChar.armorPower = armorStrength;
         }
-
         GameManager.instance.RemoveItem(itemName);
     }
 }

@@ -48,6 +48,14 @@ public class BattleManager : MonoBehaviour
 
     public bool cannotFlee;
 
+    public GameObject itemMenu;
+    public ItemButton[] itemButtons;
+    public string selectedItem;
+    public Item activeItem;
+    public Text itemName, itemDescription, useButtonText;
+
+    public GameObject itemCharChoiceMenu;
+    public Text[] itemCharChoiceName;
 
     // Start is called before the first frame update
     void Start()
@@ -72,10 +80,6 @@ public class BattleManager : MonoBehaviour
                     uiButtonsHolder.SetActive(false);
                     StartCoroutine(EnemyMoveCo());
                 }
-            }
-            if (Input.GetKeyDown(KeyCode.N))
-            {
-                NextTurn();
             }
         }
     }
@@ -414,5 +418,103 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         battleScene.SetActive(false);
         SceneManager.LoadScene(sceneGameOver);
+    }
+
+    public void ShowItems()
+    {
+        GameManager.instance.SortItems();
+        for (int i = 0; i < itemButtons.Length; i++)
+        {
+            itemButtons[i].buttonValue = i;
+            if (GameManager.instance.itemsHeld[i] != "")
+            {
+                itemButtons[i].buttonImage.gameObject.SetActive(true);
+                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite;
+                itemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString();
+            }
+            else
+            {
+                itemButtons[i].buttonImage.gameObject.SetActive(false);
+                itemButtons[i].amountText.text = "";
+            }
+        }
+    }
+
+    public void OpenItemMenu()
+    {
+        itemMenu.SetActive(true);
+        ShowItems();
+    }
+
+    public void CloseItemMenu()
+    {
+        itemMenu.SetActive(false);
+        CloseItemCharChoice();
+    }
+
+    public void OpenItemCharChoice()
+    {
+        itemCharChoiceMenu.SetActive(true);
+        for (int i = 0; i < itemCharChoiceName.Length; i++)
+        {
+            if (GameManager.instance.playerStats[i] != null)
+            {
+                itemCharChoiceName[i].text = GameManager.instance.playerStats[i].charName;
+                itemCharChoiceName[i].transform.parent.gameObject.SetActive(true);
+            }
+        }
+    }
+
+    public void CloseItemCharChoice()
+    {
+        itemCharChoiceMenu.SetActive(false);
+    }
+
+    public void UseItem(int selectChar)
+    {
+        activeItem.Use(selectChar);
+        for(int i = 0; i < activeBattlers.Count; i++)
+        {
+            if(activeBattlers[i].charName == playerPrefabs[selectChar].charName)
+            {
+                activeBattlers[i].currentHP = GameManager.instance.playerStats[selectChar].currentHP;
+                activeBattlers[i].currentMP = GameManager.instance.playerStats[selectChar].currentMP;
+                activeBattlers[i].wpnPower = GameManager.instance.playerStats[selectChar].weaponPower;
+                activeBattlers[i].armrPower = GameManager.instance.playerStats[selectChar].armorPower;
+            }
+        }
+        UnSelectedItem();
+        NextTurn();
+        CloseItemCharChoice();
+    }
+
+    public void UnSelectedItem()
+    {
+        activeItem = null;
+        itemName.text = "";
+        itemDescription.text = "";
+    }
+
+    public void SelectItem(Item newItem)
+    {
+        activeItem = newItem;
+        if (activeItem.isItem)
+        {
+            useButtonText.text = "Use";
+        }
+        if (activeItem.isWeapon || activeItem.isArmor)
+        {
+            useButtonText.text = "Equip";
+        }
+        itemName.text = activeItem.itemName;
+        itemDescription.text = activeItem.desscription;
+    }
+
+    public void DiscartItem()
+    {
+        if (activeItem != null)
+        {
+            GameManager.instance.RemoveItem(activeItem.itemName);
+        }
     }
 }

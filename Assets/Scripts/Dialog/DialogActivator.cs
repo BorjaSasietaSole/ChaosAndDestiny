@@ -12,12 +12,16 @@ public class DialogActivator : MonoBehaviour
     public bool markComplete;
     public string questToMark;
 
+    private static bool showing = false;
     public GameObject toShow;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (toShow != null)
+        {
+            toShow.SetActive(showing);
+        }
     }
 
     // Update is called once per frame
@@ -28,8 +32,9 @@ public class DialogActivator : MonoBehaviour
             DialogController.instance.ShowDialog(lines);
             DialogController.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
             if (toShow != null) 
-            { 
-                toShow.SetActive(true); 
+            {
+                showing = true;
+                toShow.SetActive(showing);
             }
         }
     }
